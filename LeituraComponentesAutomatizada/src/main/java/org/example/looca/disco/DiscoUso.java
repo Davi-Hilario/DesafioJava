@@ -12,6 +12,6 @@ public class DiscoUso extends Disco  {
             discoDisponivel += v.getDisponivel();
         }
 
-        return discoDisponivel.doubleValue();
+        return 100 - (((double) discoDisponivel / (double) totalDisco) * 100);
     }
 }
